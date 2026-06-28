@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0f14;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #121a24;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+.button-row a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 14px;
+    background: #1f6feb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button-row a:hover {
+    background: #388bfd;
+}
+
+.grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.big-button {
+    flex: 1;
+    min-width: 200px;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.firefighter { background: #b22222; }
+.ems { background: #1e90ff; }
+.firepolice { background: #ff8c00; }
+
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #777;
+}
