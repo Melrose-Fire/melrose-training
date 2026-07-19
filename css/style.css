@@ -1,0 +1,429 @@
+/* ==========================================================
+   MELROSE FIRE COMPANY TRAINING PORTAL
+   Global Stylesheet
+   ========================================================== */
+
+/* ---------- Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600&display=swap');
+
+/* ---------- Color Palette ---------- */
+:root{
+
+    --bg:#08111D;
+    --bg-secondary:#0F1724;
+
+    --card:#162235;
+    --card-hover:#1C2B42;
+
+    --border:#273445;
+
+    --red:#C62828;
+    --blue:#1565C0;
+    --orange:#EF6C00;
+    --green:#2E7D32;
+
+    --white:#FFFFFF;
+    --text:#F5F7FA;
+    --muted:#B0BEC5;
+
+    --shadow:0 12px 30px rgba(0,0,0,.35);
+
+    --radius:14px;
+
+}
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+    line-height:1.6;
+
+}
+
+/* ---------- Layout ---------- */
+
+.container{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+}
+
+/* ---------- Header ---------- */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:rgba(8,17,29,.92);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:72px;
+
+    height:auto;
+
+}
+
+.logo-text h1{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:1.7rem;
+
+    font-weight:500;
+
+    letter-spacing:.5px;
+
+}
+
+.logo-text p{
+
+    color:var(--muted);
+
+    font-size:.9rem;
+
+}
+
+/* ---------- Navigation ---------- */
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:28px;
+
+}
+
+nav a{
+
+    color:var(--text);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    color:var(--red);
+
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    padding:90px 0;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:3.4rem;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    color:var(--muted);
+
+    font-size:1.2rem;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+/* ---------- Section ---------- */
+
+section{
+
+    padding:60px 0;
+
+}
+
+.section-title{
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+/* ---------- Card ---------- */
+
+.card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    background:var(--card-hover);
+
+}
+
+/* ---------- Grid ---------- */
+
+.grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.grid-2{
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+}
+
+.grid-3{
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+}
+
+.grid-4{
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+}
+
+/* ---------- Buttons ---------- */
+
+.button{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:var(--red);
+
+    transition:.25s;
+
+    font-weight:600;
+
+}
+
+.button:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.1);
+
+}
+
+/* ---------- Portal Cards ---------- */
+
+.portal-card{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+.portal-card h3{
+
+    margin:18px 0 10px;
+
+    font-family:'Oswald',sans-serif;
+
+    font-size:1.5rem;
+
+}
+
+.portal-card p{
+
+    color:var(--muted);
+
+}
+
+.portal-icon{
+
+    font-size:3rem;
+
+}
+
+/* ---------- Lists ---------- */
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    margin:8px 0;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    margin-top:80px;
+
+    border-top:1px solid var(--border);
+
+    padding:30px 0;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    font-size:.9rem;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h2{
+
+    font-size:2.5rem;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+    padding:60px 0;
+
+}
+
+.hero h2{
+
+    font-size:2rem;
+
+}
+
+.logo{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+}
+/* Active Navigation Link */
+
+nav a.active{
+
+    color: var(--red);
+
+    border-bottom:2px solid var(--red);
+
+    padding-bottom:4px;
+
+}
